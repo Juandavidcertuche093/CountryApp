@@ -32,9 +32,7 @@ export class CountryPageComponent implements OnInit {
         return this.router.navigateByUrl('');
       }
 
-      console.log('TENEMOS UN PAIS')
-
-      return
+      return this.country = country
     })
 
   }

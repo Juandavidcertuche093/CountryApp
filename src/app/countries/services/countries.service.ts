@@ -15,8 +15,7 @@ export class CountriesService {
     private http: HttpClient
   ) { }
 
-  //METODO
-
+  //METODOS
   searchCountryByAlphaCode( code: string):Observable<Country | null>{
     return this.http.get<Country[]>(`${this.apiUrl}/alpha/${ code }`)
     .pipe(
