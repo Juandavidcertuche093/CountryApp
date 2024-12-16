@@ -6,7 +6,8 @@
     <!-- SearchBox -->
     <shared-search-box
       placeholder="Buscar pais"
-      (onValue)="searchByCountry($event)"
+      (ondebonce)="searchByCountry($event)"
+      [initialValue]="initialValue"
       ></shared-search-box>
   </div>
 </div>
